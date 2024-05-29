@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <>
+    <Fragment>
       <div className="container">
         <div className="button-group">
           <button onClick={minusCount}>-</button>
@@ -26,7 +26,7 @@ function App() {
         </div>
         <button onClick={resetCount}>reset</button>
       </div>
-    </>
+    </Fragment>
   );
 }
 
