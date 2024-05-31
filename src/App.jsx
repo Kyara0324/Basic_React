@@ -30,16 +30,16 @@ function App() {
     setValue("");
   };
 
-  const deleteTodo = (선택된id) => {
+  const deleteTodo = (selectedId) => {
     const filteredTodoList = todoList.filter((todo) => {
-      return 선택된id !== todo.id;
+      return selectedId !== todo.id;
     });
     setTodoList(filteredTodoList);
   };
 
-  const updateTodo = (선택된id) => {
+  const updateTodo = (selectedId) => {
     const updatedTodo = todoList.map((todo) => {
-      if (선택된id === todo.id) {
+      if (selectedId === todo.id) {
         return {
           ...todo,
           completed: !todo.completed,
